@@ -1,6 +1,6 @@
 # MvcCore - Project - Basic
 
-[![Latest Stable Version](https://img.shields.io/badge/Stable-v3.1.4-brightgreen.svg?style=plastic)](https://github.com/mvccore/project-basic/releases)
+[![Latest Stable Version](https://img.shields.io/badge/Stable-v3.1.5-brightgreen.svg?style=plastic)](https://github.com/mvccore/project-basic/releases)
 [![License](https://img.shields.io/badge/Licence-BSD-brightgreen.svg?style=plastic)](https://github.com/mvccore/project-basic/blob/master/LICENCE.md)
 ![PHP Version](https://img.shields.io/badge/PHP->=5.3-brightgreen.svg?style=plastic)
 
