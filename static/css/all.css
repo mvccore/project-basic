@@ -1,0 +1,48 @@
+html,body{
+	margin:0;
+	font-family:'MyriadRegular',Arial,Helvetica,sans-serif;
+	font-size:14px;
+	line-height:1.5em;
+	background:#999;
+}
+
+a{
+	color:#236fd0;
+	cursor:pointer;
+	text-decoration:none;
+	border-bottom:1px solid #236fd0;
+}
+a:hover,
+a:focus,
+a:active{
+	color:#6697d6;
+	border-bottom:1px solid #6697d6;
+}
+a:visited{
+	color:#587598;
+	border-bottom:1px solid #587598;
+}
+
+.master-container{
+	width:500px;
+	margin:30px auto 50px auto;
+}
+.content{
+	text-align:center;
+	padding:25px;
+	background:#fff;
+	border-radius:3px;
+	box-shadow:0 0 15px rgba(0,0,0,0.6);
+}
+
+.content h1{
+	font-family:'MyriadBold';
+	font-size:2.5em;
+	line-height:1.5em;
+	margin:0 0 25px 0;
+	padding:0 0 0 50px;
+	background:url('../img/mvccore-logo.png') 0 6px no-repeat;
+}
+.content *:last-child{
+	margin-bottom:5px;
+}
