@@ -54,3 +54,5 @@ Temporary Items
 # Application third party modules contents
 composer.lock
 vendor/*
+*.phpproj
+.vs
