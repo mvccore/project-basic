@@ -1,6 +1,8 @@
 <?php
 
-class App_Views_Helpers_Format
+namespace App\Views\Helpers;
+
+class Format
 {
 	/**
 	 * String formater

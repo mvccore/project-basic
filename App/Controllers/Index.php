@@ -1,12 +1,16 @@
 <?php
 
-class App_Controllers_Default extends App_Controllers_Base
+namespace App\Controllers;
+
+use App\Models;
+
+class Index extends Base
 {
     public function HomeAction () {
 		$tables = array();
 		try {
-			$tables = App_Models_Base::GetAllDbTables();
-		} catch (Exception $e) {
+			$tables = Models\Base::GetAllDbTables();
+		} catch (\Exception $e) {
 			$this->view->ErrorMsg = $e->getMessage();
 		}
 		$this->view->Tables = $tables;

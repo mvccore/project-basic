@@ -1,19 +1,21 @@
 <?php
 
-class App_Bootstrap {
+namespace App;
+
+class Bootstrap {
 	public static function Init () {
 		// patch core to use extended debug class
-		if (class_exists('MvcCoreExt_Tracy')) {
-			MvcCoreExt_Tracy::$Editor = 'NotepadPP';
-			MvcCore::GetInstance()->SetDebugClass('MvcCoreExt_Tracy');
+		if (class_exists('\MvcCore\Ext\Debug\Tracy')) {
+			\MvcCore\Ext\Debug\Tracy::$Editor = 'NotepadPP';
+			\MvcCore::GetInstance()->SetDebugClass(\MvcCore\Ext\Debug\Tracy::class);
 		}
 		
 		// set up application routes with custom names:
-		MvcCore_Router::GetInstance()->SetRoutes(array(
+		\MvcCore\Router::GetInstance(array(
 			'home'		=> array(
 				'pattern'		=> "#^/$#",
 				'reverse'		=> '/',
-				'controller'	=> 'Default',
+				'controller'	=> 'Index',
 				'action'		=> 'Home',
 			),
 		));
