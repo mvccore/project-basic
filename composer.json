@@ -23,7 +23,8 @@
 		"mvccore/mvccore": "^4.1",
 		"mvccore/ext-debug-tracy": "^4.1",
 		"mvccore/ext-debug-tracy-mvccore": "^4.1",
-		"mvccore/ext-debug-tracy-routing": "^4.1"
+		"mvccore/ext-debug-tracy-routing": "^4.1",
+		"mvccore/ext-view-helper-assets": "^4.1"
 	},
 	"minimum-stability": "dev"
 }
