@@ -57,3 +57,4 @@ vendor/*
 *.phpproj
 *.phpproj.user
 .vs
+Var/Tmp/*
