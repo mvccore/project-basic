@@ -23,8 +23,7 @@
 		"mvccore/mvccore": "^4.1",
 		"mvccore/ext-tracy": "^4.1",
 		"mvccore/ext-tracy-mvccore": "^4.1",
-		"mvccore/ext-tracy-routing": "^4.1",
-		"tracy/tracy": "^2.4"
+		"mvccore/ext-tracy-routing": "^4.1"
 	},
 	"minimum-stability": "dev"
 }
