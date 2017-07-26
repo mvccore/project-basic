@@ -1,7 +1,7 @@
 # MvcCore - Project - Basic
 
-[![Latest Stable Version](https://img.shields.io/badge/Stable-v3.2.0-brightgreen.svg?style=plastic)](https://github.com/mvccore/project-basic/releases)
-[![License](https://img.shields.io/badge/Licence-BSD-brightgreen.svg?style=plastic)](https://mvccore.github.io/docs/mvccore/3.0.0/LICENCE.md)
+[![Latest Stable Version](https://img.shields.io/badge/Stable-v4.1.0-brightgreen.svg?style=plastic)](https://github.com/mvccore/project-basic/releases)
+[![License](https://img.shields.io/badge/Licence-BSD-brightgreen.svg?style=plastic)](https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md)
 ![PHP Version](https://img.shields.io/badge/PHP->=5.3-brightgreen.svg?style=plastic)
 
 - [**MvcCore**](https://github.com/mvccore/mvccore) basic website project, recomanded to pack with [**Packager**](https://github.com/mvccore/packager) only to some mixed mode with hard drive, because all assets are not linked with [**MvcCore Extension - View Helper Assets**](https://github.com/mvccore/ext-viewhelp-assets).
