@@ -13,6 +13,7 @@ class Base extends \MvcCore\Controller
 		parent::PreDispatch();
 		if ($this->viewEnabled) {
 			$this->_preDispatchSetUpBundles();
+			$this->view->BasePath = $this->GetRequest()->BasePath;
 			// do any prerender initialization here:
 			
 		}
