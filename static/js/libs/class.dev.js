@@ -1,7 +1,7 @@
 /**
  * Javascript Class Helper
  * @author Tom Flidr <tomflidr@gmail.com>
- * @version 2.1.1
+ * @version 2.1.2
  * @summary 2017-07-26
  * @example
 
@@ -836,7 +836,8 @@ Class = (function (_globalScope) {
 		var _result,
 			_fullname = $class._constants.Fullname,
 			_selfStr = $class._constants.self,
-			_currentLevelClassDefinition = _context[_selfStr],
+			_staticStr = $class._constants.static,
+			_currentLevelClassDefinition = _context[_staticStr],
 			_parentClassDefinition = _currentLevelClassDefinition[$class._constants.Extend],
 			_parentMethod;
 		if (!_parentClassDefinition) {
@@ -847,7 +848,7 @@ Class = (function (_globalScope) {
 			throw "No parent method named: '" + _methodName + "' for type: '" + _currentLevelClassDefinition[_fullname] + "'.";
 		};
 		_context[_selfStr] = _parentClassDefinition; // set up parent class definition into this.self
-		_result = _parentMethod.apply(_imprintsIndex ? _context[$class._constants.static] : _context, _args);
+		_result = _parentMethod.apply(_imprintsIndex ? _context[$class._constants[_staticStr]] : _context, _args);
 		_context[_selfStr] = _currentLevelClassDefinition;
 		return _result;
 	};
