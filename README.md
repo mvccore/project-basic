@@ -1,4 +1,4 @@
-# MvcCore - Project - Basic
+# MvcCore - Basic Website Project Template
 
 [![Latest Stable Version](https://img.shields.io/badge/Stable-v5.0.0-brightgreen.svg?style=plastic)](https://github.com/mvccore/project-basic/releases)
 [![License](https://img.shields.io/badge/Licence-BSD-brightgreen.svg?style=plastic)](https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md)
@@ -12,6 +12,6 @@
 
 ## Instalation
 ```shell
-# load project into './my-project' (directory is created if doesn't exist)
+# load project template into './my-project' (directory is created if doesn't exist)
 composer create-project mvccore/project-basic my-project
 ```
