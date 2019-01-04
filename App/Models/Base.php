@@ -4,8 +4,15 @@ namespace App\Models;
 
 class Base extends \MvcCore\Model
 {
-	public static function GetAllDbTables () {
-		$dbName = self::GetCfg()->dbname;
+	/**
+	 * System config connection index.
+	 * @var int
+	 */
+	protected static $connectionName = 0;
+
+	public static function GetAllDbTables ()
+	{
+		$dbName = self::GetConfig()->database;
 		
 		$select = self::GetDb()->prepare("
 			SELECT 
@@ -15,12 +22,14 @@ class Base extends \MvcCore\Model
 			WHERE 
 				TABLE_SCHEMA = :dbName
 		");
-		$select->execute(array('dbName' => $dbName));
+		$select->execute(['dbName' => $dbName]);
 		
 		$rawResult = $select->fetchAll(\PDO::FETCH_ASSOC);
 		
-		$result = array();
-		foreach ($rawResult as $item) $result[] = $item['TableName'];
+		$result = [];
+		foreach ($rawResult as $item) 
+			$result[] = $item['TableName'];
+
 		return $result;
 	}
 }

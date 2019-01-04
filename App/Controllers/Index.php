@@ -6,7 +6,12 @@ use App\Models;
 
 class Index extends Base
 {
-    public function HomeAction () {
+	/**
+	 * Render homepage.
+	 * @return void
+	 */
+    public function HomeAction ()
+	{
 		$tables = array();
 		try {
 			$tables = Models\Base::GetAllDbTables();
@@ -16,8 +21,26 @@ class Index extends Base
 		$this->view->Tables = $tables;
 		$this->view->Title = 'MvcCore Project - Basic';
     }
-    public function NotFoundAction () {
-		$this->view->Title = "Error 404 - requested page not found.";
-		$this->view->Message = $this->request->Params['message'];
-    }
+
+    /**
+	 * Render not found action.
+	 * @return void
+	 */
+	public function NotFoundAction(){
+		$this->ErrorAction();
+	}
+
+	/**
+	 * Render possible server error action.
+	 * @return void
+	 */
+	public function ErrorAction () {
+		$code = $this->response->GetCode();
+		$message = $this->request->GetParam('message', '\\a-zA-Z0-9_;, /\-\@\:');
+		$message = preg_replace('#`([^`]*)`#', '<code>$1</code>', $message);
+		$message = str_replace("\n", '<br />', $message);
+		$this->view->Title = "Error $code";
+		$this->view->Message = $message;
+		$this->Render('error');
+	}
 }

@@ -4,11 +4,12 @@ namespace App\Controllers;
 
 class System extends Base
 {
-	public function JsErrorsLogAction () {
-		$this->DisableView();
+	public function JsErrorsLogAction ()
+	{
+		$this->SetViewEnabled(FALSE);
 		if (\MvcCore\Config::IsProduction()) return;
 		$keys = array(
-			'message'=>1,
+			'message'	=> 1,
 			'uri'		=> 1,
 			'file'		=> 1,
 			'line'		=> 0,
@@ -27,7 +28,9 @@ class System extends Base
 		$msg = json_encode($data);
 		\MvcCore\Debug::Log($msg, \MvcCore\Debug::JAVASCRIPT);
 	}
-	private static function _hexToStr ($hex) {
+
+	private static function _hexToStr ($hex)
+	{
 		$string='';
 		for ($i = 0; $i < strlen($hex) - 1; $i += 2){
 			$string .= chr(hexdec($hex[$i].$hex[$i+1]));

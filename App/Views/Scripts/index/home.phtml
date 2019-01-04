@@ -1,9 +1,13 @@
 <?php /** @var $this \MvcCore\View */ ?>
+
 <h1><?php echo $this->Title; ?></h1>
-<p>
-	It works! You are using <a href="https://github.com/mvccore" target="_blank"><b>MvcCore</b></a> 
-	version: <b><code>"<?php echo \MvcCore::VERSION; ?>"</code></b>.
-</p>
+
+<p><?php echo $this->Format(
+	'It works! You are using {0} version: {1}.',
+	'<a href="https://github.com/mvccore" target="_blank"><b>MvcCore</b></a>',
+	'<b><code>"' .\MvcCore\Application::VERSION . '"</code></b>'
+); ?></p>
+
 <p>
 	<?php if ($this->Tables): ?>
 		Tables founded in database: <b><code>"<?php echo implode(', ', $this->Tables); ?>"</code></b>

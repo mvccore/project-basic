@@ -1,13 +1,17 @@
 {
 	"name": "mvccore/project-basic",
-	"type": "application",
+	"type": "project",
 	"description": "MvcCore - Project - Basic - basic website project, not designed for full portable build/pack.",
 	"keywords": [
 		"mvccore", 
-		"mvccore basic",
-		"mvccore basic project",
-		"basic web",
-		"basic web project",
+		"basic", 
+		"empty",
+		"project",
+		"template",
+		"basic project",
+		"new project",
+		"empty project",
+		"template project",
 		"not portable",
 		"not full portable"
 	],
@@ -19,12 +23,12 @@
 		}
 	],
 	"require": {
-		"php": ">=5.3.0",
-		"mvccore/mvccore": "^4.2",
-		"mvccore/ext-debug-tracy": "^4.2",
-		"mvccore/ext-debug-tracy-mvccore": "^4.2",
-		"mvccore/ext-debug-tracy-routing": "^4.2",
-		"mvccore/ext-view-helper-assets": "^4.2"
+		"php": ">=5.4.0",
+		"mvccore/mvccore": "^5.0",
+		"mvccore/ext-debug-tracy": "^5.0",
+		"mvccore/ext-debug-tracy-mvccore": "^5.0",
+		"mvccore/ext-debug-tracy-routing": "^5.0",
+		"mvccore/ext-view-helper-assets": "^5.0"
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "stable"
 }

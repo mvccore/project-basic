@@ -52,9 +52,13 @@ Temporary Items
 .hgtags
 
 # Application third party modules contents
-composer.lock
+Var/Tmp/*
+Var/Logs/*
 vendor/*
+*.lock
+composer-update-dev.cmd
+composer-update.cmd
+composer.dev.json
+.vs
 *.phpproj
 *.phpproj.user
-.vs
-Var/Tmp/*
