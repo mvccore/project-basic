@@ -11,7 +11,7 @@ Class.Define('Module',{
 	},
 	errorFingerPrints: {},
 	initErrorLogging: function () {
-		return; // comment this line to show uncatched errors in browser console
+		return; // comment this line to show uncaught errors in browser console
 		window.onerror = function (message, file, line, col, error) {
 			var errorFingerPrint = this.convertStringToHexadecimalValue(file) + '_' + String(line);
 			if (typeof(this.errorFingerPrints[errorFingerPrint]) != 'undefined') {
