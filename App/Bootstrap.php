@@ -15,7 +15,7 @@ class Bootstrap
 		// Set up application routes with custom names:
 		\MvcCore\Router::GetInstance([
 			'home'			=> [
-				'match'			=> "#^/$#",
+				'match'			=> "#^/(index.php)?$#",
 				'reverse'		=> '/',
 				'controller'	=> 'Index',
 				'action'		=> 'Home',
