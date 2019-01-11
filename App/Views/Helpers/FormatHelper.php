@@ -13,7 +13,7 @@ class FormatHelper
 	 * @param mixed  $args..,  any arguments converted to string 
 	 * @return string
 	 */
-	public function Format (/* $template, ...$args */) {
+	public function Format ($template, $args) {
 		$arguments = func_get_args();
 		if (count($arguments) == 0) return '';
 		if (count($arguments) == 1) return $arguments[0];
