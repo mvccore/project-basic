@@ -2,21 +2,23 @@
 
 namespace App\Controllers;
 
-class Base extends \MvcCore\Controller
-{
+class Base extends \MvcCore\Controller {
+
 	public function Init () {
 		parent::Init();
 		// do any initialization here:
-		
+
 	}
 
 	public function PreDispatch () {
 		parent::PreDispatch();
 		if ($this->viewEnabled) {
 			$this->_preDispatchSetUpBundles();
-			$this->view->BasePath = $this->GetRequest()->GetBasePath();
+			$this->view->basePath = $this->GetRequest()->GetBasePath();
 			// do any pre-render initialization here:
-			
+
+			// to load DEMO string formatter view helper into view local method:
+			$this->view->GetHelper('format');
 		}
 	}
 

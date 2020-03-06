@@ -1,18 +1,20 @@
 <?php /** @var $this \MvcCore\View */ ?>
 
-<h1><?php echo $this->Title; ?></h1>
+<h1><?=$title?></h1>
 
-<p><?php echo $this->Format(
-	'It works! You are using {0} version: {1}.',
-	'<a href="https://github.com/mvccore" target="_blank"><b>MvcCore</b></a>',
-	'<b><code>"' .\MvcCore\Application::VERSION . '"</code></b>'
-); ?></p>
+<p><?=$format(
+	'It works! You are using <a href="{0}" target="{1}"><b>{2}</b></a> version: <b><code>"{3}"</code></b>.',
+	'https://github.com/mvccore',
+	'_blank',
+	'MvcCore',
+	\MvcCore\Application::VERSION
+)?></p>
 
 <p>
-	<?php if ($this->Tables): ?>
-		Tables founded in database: <b><code>"<?php echo implode(', ', $this->Tables); ?>"</code></b>
+	<?php if ($tables): ?>
+		Tables founded in database: <b><code>"<?=implode(', ', $tables)?>"</code></b>
 	<?php else: ?>
 		There was not possible to connect into database. <br />
-		<code><?php echo $this->ErrorMsg; ?></code>
+		<code><?=$errorMsg?></code>
 	<?php endif; ?>
 </p>

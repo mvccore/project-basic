@@ -2,10 +2,9 @@
 
 namespace App\Views\Helpers;
 
-class FormatHelper
-{
+class FormatHelper {
 	/**
-	 * String formatter.
+	 * SIMPLE DEMO string formatter.
 	 * Format any string template with curly bracket 
 	 * replacements: '...{0}...{1}...', given as first param
 	 * with params given as all next arguments
