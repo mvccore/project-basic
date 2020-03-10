@@ -3,6 +3,7 @@
 namespace App\Views\Helpers;
 
 class FormatHelper {
+	
 	/**
 	 * SIMPLE DEMO string formatter.
 	 * Format any string template with curly bracket 

@@ -2,8 +2,8 @@
 
 namespace App\Models;
 
-class Base extends \MvcCore\Model
-{
+class Base extends \MvcCore\Model {
+
 	/**
 	 * System config connection index.
 	 * @var int
