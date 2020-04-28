@@ -1,5 +1,9 @@
 <?php
 
 	@include_once('vendor/autoload.php');
-	
-	\App\Bootstrap::Init()->Run();
+
+	$app = \App\Bootstrap::Init();
+
+	$app
+		//->SetCompiled(\MvcCore\Application::COMPILED_SFU)
+		->Dispatch();

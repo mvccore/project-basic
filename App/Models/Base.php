@@ -14,7 +14,7 @@ class Base extends \MvcCore\Model {
 	{
 		$dbName = self::GetConfig()->database;
 
-		$select = self::GetDb()->prepare("
+		$select = self::GetConnection()->prepare("
 			SELECT
 				TABLE_NAME as TableName
 			FROM
