@@ -46,3 +46,10 @@ a:visited{
 .content *:last-child{
 	margin-bottom:5px;
 }
+
+.content ul {
+	margin-left: 120px;
+}
+.content ul li {
+	text-align:left;
+}

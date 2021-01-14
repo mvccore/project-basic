@@ -12,7 +12,8 @@
 
 <p>
 	<?php if ($tables): ?>
-		Tables founded in database: <b><code>"<?=implode(', ', $tables)?>"</code></b>
+		Tables founded in database: <br />
+		<ul><li>"<?=implode('</li><li>', $tables)?>"</li></ul>
 	<?php else: ?>
 		There was not possible to connect into database. <br />
 		<code><?=$errorMsg?></code>
