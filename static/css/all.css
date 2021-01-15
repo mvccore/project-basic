@@ -28,7 +28,6 @@ a:visited{
 	margin:30px auto 50px auto;
 }
 .content{
-	text-align:center;
 	padding:25px;
 	background:#fff;
 	border-radius:3px;
@@ -45,11 +44,4 @@ a:visited{
 }
 .content *:last-child{
 	margin-bottom:5px;
-}
-
-.content ul {
-	margin-left: 120px;
-}
-.content ul li {
-	text-align:left;
 }
