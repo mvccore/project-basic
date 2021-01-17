@@ -3,8 +3,8 @@
 	"type": "project",
 	"description": "MvcCore - Project - Basic - basic website project, not designed for full portable build/pack.",
 	"keywords": [
-		"mvccore", 
-		"basic", 
+		"mvccore",
+		"basic",
 		"empty",
 		"project",
 		"template",
@@ -16,12 +16,10 @@
 		"not full portable"
 	],
 	"license": ["BSD-3-Clause"],
-	"authors": [
-		{
-			"name": "Tom Flidr",
-			"homepage": "https://github.com/tomFlidr"
-		}
-	],
+	"authors": [{
+		"name": "Tom Flidr",
+		"homepage": "https://github.com/tomFlidr"
+	}],
 	"require": {
 		"php": ">=5.4.0",
 		"mvccore/mvccore": "^5.0",
