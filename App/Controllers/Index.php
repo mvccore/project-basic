@@ -15,7 +15,7 @@ class Index extends Base {
 		$tables = array();
 		try {
 			$tables = Models\Base::GetAllDbTables();
-		} catch (\Exception $e) {
+		} catch (\Throwable $e) {
 			$this->view->errorMsg = $e->getMessage();
 		}
 		$this->view->tables = $tables;
