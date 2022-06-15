@@ -59,6 +59,7 @@ vendor/*
 composer-update-dev.cmd
 composer-update.cmd
 composer.dev.json
+composer.dev.lock
 .vs
 *.phpproj
 *.phpproj.user
