@@ -4,14 +4,7 @@ namespace App\Models;
 
 class Base extends \MvcCore\Model {
 
-	/**
-	 * System config connection index.
-	 * @var int
-	 */
-	protected static $connectionName = 0;
-
-	public static function GetAllDbTables ()
-	{
+	public static function GetAllDbTables () {
 		$dbName = self::GetConfig()->database;
 
 		$select = self::GetConnection()->prepare("
