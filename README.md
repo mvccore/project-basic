@@ -8,7 +8,7 @@
 - Project is possible to pack/build with [**Packager**](https://github.com/mvccore/packager) only into mixed modes with PHP 
   package and hard drive, because all assets are not hardly linked for single file build.
 - If you want new empty project template for single file pack/build, use [**`mvccore/project-portable`**](https://github.com/mvccore/project-portable)
-- Project lists only homepage template content and **it tries to list tables** from MySQL `cdcol` database, with `root` login and empty password credentials by `/App/config.ini` if possible.
+- Project lists only homepage template content and **it tries to list tables** from MySQL `mysql` database, with `root` login and empty password credentials by `/App/config.ini` if possible.
 
 ## Instalation
 ```shell
