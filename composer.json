@@ -22,11 +22,11 @@
 	}],
 	"require": {
 		"php": ">=5.4.0",
-		"mvccore/mvccore": "^5.2",
-		"mvccore/ext-debug-tracy": "^5.0",
-		"mvccore/ext-debug-tracy-mvccore": "^5.0",
-		"mvccore/ext-debug-tracy-routing": "^5.0",
-		"mvccore/ext-view-helper-assets": "^5.0"
+		"mvccore/mvccore": "^5.2.33",
+		"mvccore/ext-view-helper-assets": "^5.2.5",
+		"mvccore/ext-debug-tracy": "^5.2.0",
+		"mvccore/ext-debug-tracy-mvccore": "^5.2.0",
+		"mvccore/ext-debug-tracy-routing": "^5.2.2"
 	},
 	"minimum-stability": "stable"
 }
