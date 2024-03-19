@@ -12,7 +12,7 @@ class Index extends Base {
 	 */
     public function HomeAction () {
 		$this->view->title = 'MvcCore Project - Basic';
-		$tables = array();
+		$tables = [];
 		try {
 			$tables = Models\Base::GetAllDbTables();
 		} catch (\Throwable $e) {
