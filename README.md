@@ -5,8 +5,8 @@
 ![PHP Version](https://img.shields.io/badge/PHP->=5.4-brightgreen.svg?style=plastic)
 
 - [**MvcCore**](https://github.com/mvccore/mvccore) basic project template for standard web application. 
-- Project lists only homepage template content and **it tries to list tables** from MySQL `mysql` database,
-  with `root` login and empty password credentials by `/App/config.ini` if possible.
+- Project lists only homepage template content and **it tries to list tables** from MySQL database,
+  with `root` login and empty password credentials in config `~/App/config.ini`.
 
 ## Instalation
 ```shell
