@@ -35,7 +35,7 @@ class Index extends Base {
 	 */
 	public function ErrorAction () {
 		$code = $this->response->GetCode();
-		if ($code === 200) $code = 404;
+		if ($code === 200) $code = 500;
 		$this->view->title = "Error {$code}";
 		$this->view->message = $this->request->GetParam('message', FALSE);
 		$this->Render('error');
