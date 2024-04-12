@@ -51,20 +51,19 @@ Temporary Items
 .hgignore
 .hgtags
 
-# Application tmp dirs
-Var/Tmp/*
-Var/Logs/*
-www/static/tmp
-
-# Application third party modules
-vendor/*
-composer-update-dev.*
-composer-update.*
-composer.dev.*
-
 # IDEs
 .vs
 *.phpproj
 *.phpproj.user
 .idea
 *.code-workspace
+
+# Application third party modules
+vendor/*
+composer-update-dev.*
+composer-update.*
+
+# Application tmp dirs
+Var/Tmp/*
+Var/Logs/*
+www/static/tmp
