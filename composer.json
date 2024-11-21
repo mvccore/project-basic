@@ -22,11 +22,17 @@
 	}],
 	"require": {
 		"php": ">=5.4.0",
-		"mvccore/mvccore": "^5.2.33",
-		"mvccore/ext-view-helper-assets": "^5.2.5",
-		"mvccore/ext-debug-tracy": "^5.2.0",
-		"mvccore/ext-debug-tracy-mvccore": "^5.2.0",
-		"mvccore/ext-debug-tracy-routing": "^5.2.2"
+		"mvccore/mvccore": "^5.3",
+		"mvccore/ext-view-helper-assets": "^5.3",
+		"mvccore/ext-debug-tracy": "^5.3",
+		"mvccore/ext-debug-tracy-mvccore": "^5.3",
+		"mvccore/ext-debug-tracy-routing": "^5.3"
 	},
-	"minimum-stability": "stable"
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"App\\": "App/"
+		}
+	}
 }
